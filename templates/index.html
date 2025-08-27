@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <div class="card centered">
+    <img src="{{ url_for('static', filename='images/poster.jpg') }}" alt="Фото Ultra" class="poster big">
+    <h1 class="subtitle">Я — Ultra (SalutByBase)</h1>
+    <p class="description">Разработчик · Дизайнер · Автор идей и проектов</p>
+  </div>
+</section>
+
+<section class="pluses">
+  <h2>Почему именно я</h2>
+  <div class="grid">
+    <div class="card">Быстро: проекты за пару дней</div>
+    <div class="card">Красиво: современный дизайн</div>
+    <div class="card">Full-stack: фронт и бэк</div>
+    <div class="card">Гибкость: всегда под клиента</div>
+  </div>
+</section>
+
+<section class="pricing">
+  <h2>Прайс</h2>
+  <div class="grid">
+    <div class="card"><h3>Лендинг</h3><p>от 1500 ₽</p></div>
+    <div class="card"><h3>Сайт</h3><p>от 2500 ₽</p></div>
+    <div class="card"><h3>Интернет-магазин</h3><p>от 3000 ₽</p></div>
+    <div class="card"><h3>Поддержка</h3><p>от 300 ₽/час</p></div>
+  </div>
+</section>
+{% endblock %}
